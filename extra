@@ -1,0 +1,165 @@
+Text editor => https://code.visualstudio.com/
+Node =>  https://nodejs.org/en/
+github => https://github.com
+window => https://git-scm.com/downloads
+
+Check nodejs
+>>node -v
+
+npm
+node package manager
+
+package.json
+>> npm init
+package name: (learnpackage) dummynodeapp
+version: (1.0.0) 
+description: this is app for learning packages
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: node api dashboard
+author: edureka
+license: (ISC) 
+
+
+//////JSON///////////
+[
+    {
+        name:"john",
+        class:"Node"
+    },
+    {
+        name:"Andy",
+        class:"React"
+    }
+]
+
+
+/////Install Package////
+npm install --save body-parser
+
+Local Module/packages
+gloabal
+>> 
+>>Mac> sudo npm install -g nodemon
+>>Window> run cmd as admin > npm install -g nodemon
+
+npm install body-praser@1.18.2
+
+>> yarn
+
+
+///
+Es5=>Ecma Script
+Es6
+
+npm init --yes
+
+curl -X GET --header "Accept: application/json" --header "Authorization: Basic c2ltcGx5cmV0czpzaW1wbHlyZXRz" "https://api.simplyrets.com/openhouses"
+
+curl -u simplyrets:simplyrets 'https://api.simplyrets.com/properties?limit=500&lastId=0'
+
+
+//////
+sudo npm install -g nodemon
+
+
+////
+function add(a,b){
+    return a+b
+}
+
+var add = (a,b) => { return a+b}
+
+var 
+let
+const
+
+var a = 10
+undefined
+a
+10
+var a =20
+undefined
+a
+20
+let b = 20
+undefined
+b
+20
+let b = 30
+VM124:1 Uncaught SyntaxError: Identifier 'b' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM124:1
+b = 30
+30
+const c = 10
+undefined
+c
+10
+const c = 11
+VM165:1 Uncaught SyntaxError: Identifier 'c' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM165:1
+c= 11
+VM173:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:2
+
+
+/***********
+var = you can redeclare and reassign
+let = you cannot redeclare but reassign
+const = you cannot redeclare nor reassign
+***********/
+
+
+//*********
+Transpile
+**********/
+babel
+
+Step1> install packages
+@babel/core
+@babel/preset-env
+@babel-register
+babel-polyfill
+
+Step2> 
+Create .babelrc
+
+step3>
+create start file
+use running file thorugh start
+
+
+
+/*************
+*************/
+var a = 10
+var b = "my age is "+a
+var c = `my age is ${a}`
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/fsnodeapp.git
+git push -u origin master
+
+
+
+
+/*
+nodemon
+os 
+fs 
+path
+url
+util
+Transpile
+babel
+express
+routes
+git
+herkou
+ejs
+*/

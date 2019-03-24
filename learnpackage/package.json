@@ -1,0 +1,20 @@
+{
+  "name": "dummynodeapp",
+  "version": "1.0.0",
+  "description": "this is app for learning packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "dashboard"
+  ],
+  "author": "edureka",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "request": "^2.88.0"
+  }
+}
