@@ -163,3 +163,26 @@ git
 herkou
 ejs
 */
+
+npm run dev
+------------
+//routes
+
+/-working
+/movies- working
+/resturt -working
+
+Req
+details for each package
+
+/details (for movies)
+/details (for resturt)
+
+---------------Resolve-----------
+express.Router()
+one router for movies & one for resturt
+
+/movies- working
+/resturt -working
+/movies/details - working
+/resturt/details - working
