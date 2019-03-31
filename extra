@@ -146,8 +146,6 @@ git remote add origin https://github.com/Aakashdeveloper/fsnodeapp.git
 git push -u origin master
 
 
-
-
 /*
 nodemon
 os 
@@ -186,3 +184,62 @@ one router for movies & one for resturt
 /resturt -working
 /movies/details - working
 /resturt/details - working
+
+
+
+////////
+CI/CD
+
+>git clone https://github.com/Aakashdeveloper/gitlearn.git
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/fsnodeapp.git
+git push -u origin master
+
+git branch -a
+
+git checkout -b development
+create pull request
+merge code
+
+
+to save local changes
+git stash
+
+git pull
+
+git stash pop
+
+
+////////////
+sno  hindi  english
+1     80  
+2             80
+[
+    {
+        sno:1,
+        hindi: 80
+    },
+    {
+        sno:2,
+        english:80
+    },
+    {
+        sno:2,
+        english:80,
+        phy:85
+    }
+]
+
+db => db
+table => collections
+row => document
+
+
+https://www.mongodb.com/download-center/community
+
+c:/
+create db
+inside db > data
