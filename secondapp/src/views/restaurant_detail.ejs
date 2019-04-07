@@ -91,26 +91,25 @@
           
           
           <!--/stories-->
-          <% for(let i=0;i<restaurants.length;i++){%>
           <div class="row">    
             <br>
             <div class="col-md-4 col-sm-4 text-center">
-              <a class="story-title" href="#"><img alt="" src="<%=restaurants[i].backgroundImageURL%>" style="width:200px;height:200px;border-radius:0px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="<%=restaurants.backgroundImageURL%>" style="width:200px;height:200px;border-radius:0px" class="img-circle"></a>
             </div>
             <div class="col-md-8 col-sm-9">
-              <h3><%=restaurants[i].name%></h3>
+              <h3><%=restaurants.name%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=restaurants[i].category%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><a href="#" class="text-muted">Details</a></small>
-                  </h4></div>
+                  <h4><span class="label label-default"><%=restaurants.category%></span></h4>
+                  <h4><span class="label label-default"><%=restaurants.contact.phone%></span></h4>
+                  <h4><span class="label label-default"><%=restaurants.location.city%></span></h4>
+                </div>
                 <div class="col-xs-3"></div>
               </div>
               <br><br>
             </div>
           </div>
           <hr>
-          <%}%>
          
           <!--/stories-->
           

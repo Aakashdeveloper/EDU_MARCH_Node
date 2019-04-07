@@ -243,3 +243,72 @@ https://www.mongodb.com/download-center/community
 c:/
 create db
 inside db > data
+
+default port 27017
+step1> mongod
+step2> mongo
+
+
+/*==================
+    Mongo command
+=====================*/
+To See all database
+> show dbs 
+To Use any Data base
+> use <database name>
+To see all collections
+> show collections
+To Find data (select query)
+> db.<collections_name>.find();
+> db.<collections_name>.find().pretty();
+Insert query
+> db.<collections_name>.insert({name:"a",class:"b"})
+> db.<collections_name>.save({})
+
+Create new Database
+> use <database>     (must create collections to see database)
+Find with condition
+> db.<collections_name>.find({name:"ds",class:"dv"})
+For one record
+> db.restaurants.findOne()
+For Insert Many
+> db.<collections_name>.insertMany([
+    {},{}
+])
+To Limit Data
+> db.<collections_name>.find().limit(2)
+Project
+> db.<collections_name>.find({},{_id:0,name:1})
+> db.<collections_name>.find({<query>},{<projections>})
+sort
+> db.movies.find({<query>},{<projections>).sort({rate:-1}).pretty()
+skip
+> db.movies.find().skip(1).sort({rate:-1}).limit(3).pretty()
+Distinct
+> db.movies.distinct("rate")
+count 
+> db.<collections_name>.count()
+Update
+> db.movies.update({rate:4.5},{$set:{rate:4.6}})
+> db.movies.update({rate:4.5},{rate:4.6})
+Upsert
+>  db.movies.update({rate:3},{
+        "name" : "Thor",
+        "language" : "ENGLISH",
+        "rate" : 3,
+        "type" : "Action Adventure Fantasy",
+        "imageUrl" : "https://image.ibb.co/f0hhZc/bp.jpg"
+    },{upsert: true})
+Delete
+> db.movies.remove({rate:3.4})
+
+
+CRUD
+Get Post Put Delete
+
+
+
+var a = 10
+
+var a 
+a = 10

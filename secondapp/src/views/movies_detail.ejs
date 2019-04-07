@@ -91,26 +91,29 @@
           
           
           <!--/stories-->
-          <% for(let i=0;i<movies.length;i++){%>
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="<%=movies[i].imageUrl%>" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="<%=movies.imageUrl%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3><%=movies[i].name%></h3>
+              <h3><%=movies.name%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=movies[i].language%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><a href="#" class="text-muted">Details</a></small>
+                  <h4><span class="label label-default"><%=movies.language%></span></h4><h4>
                   </h4></div>
+                <div class="col-xs-9">
+                    <h4><span class="label label-default"><%=movies.rate%></span></h4><h4>
+                    </h4></div>
+                <div class="col-xs-9">
+                    <h4><span class="label label-default"><%=movies.type%></span></h4><h4>
+                    </h4></div>
                 <div class="col-xs-3"></div>
               </div>
               <br><br>
             </div>
           </div>
           <hr>
-          <%}%>
          
           <!--/stories-->
           
