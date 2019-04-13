@@ -10,6 +10,10 @@ const database = "dashboard"
 const col = 'userlist'
 let db;
 
+app.use(express.static(__dirname+'/public'))
+app.set('view engine','ejs')
+app.set('views', './src/views')
+
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
@@ -17,7 +21,7 @@ app.use(bodyParser.json())
 app.get('/',(req,res) => {
     db.collection(col).find().toArray((err,data)=>{
         if(err) throw err;
-        res.send(data)
+        res.render('index',{data})
     })
 })
 
@@ -33,8 +37,9 @@ app.post('/getdata',(req,res) => {
 app.post('/addData',(req,res) => {
     db.collection(col).insert(req.body,(err)=>{
         if(err) throw err;
-        res.send({message:"data added"})
+        console.log('data inserted')
     })
+    res.redirect('/')
 })
 
 //Get User By Name
@@ -78,6 +83,9 @@ app.delete('/deleteUser',(req,res) => {
     })
 })
 
+app.get('/new',(req,res)=>{
+    res.render('admin')
+})
 
 MongoClient.connect(MongoUrl,(err,client) => {
     if(err) throw err;

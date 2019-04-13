@@ -312,3 +312,70 @@ var a = 10
 
 var a 
 a = 10
+
+
+///Docker
+All images
+> Docker image ls
+
+Delete images
+> Docker rmi <imageid>
+
+Running Container
+> Docker ps
+ docker ps —all
+
+Create Container
+> docker create hello-world
+Start Container
+> docker start -a  5d2c3d76e4615f48b5f5850658f0755430f9676adc35e0954818af0cb26dd0e1
+
+
+Restart Container
+> docker ps —all
+> take id(name)
+> docker start -a <id>
+
+Remove all stopped images
+>Docker system prune
+
+Putting Logs in container
+> docker create <image name>
+> docker start <id>
+> docker logs <id>
+
+Stop container
+> docker stop/kill < container id>
+
+Run reds on docker
+> docker run redis
+Run second command inside the container
+> docker exec -it <container_id> <command>
+
+Open command prompt
+> docker exec <container_id> sh
+
+Build new image
+Create DockerFile
+> docker build .
+> Docker run <container id>
+
+Provide name to image
+> docker build -t ahanda205/nodeapp .
+
+Expose port
+> docker run -p 8000:8000 ahanda205/nodeapp
+
+DockerCompose
+> create Docker-compose.yml
+> Docker-compose up
+
+Run in background
+> docker-compose up -d
+> docker-compose down
+
+Particular file
+> docker build -f Dockerfile.dev
+
+Look for local repo
+Docker run -p 3000:3000 -v /app/node_modules -v ${pwd}:/app <imageid>
