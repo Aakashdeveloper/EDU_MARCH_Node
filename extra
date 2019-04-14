@@ -379,3 +379,11 @@ Particular file
 
 Look for local repo
 Docker run -p 3000:3000 -v /app/node_modules -v ${pwd}:/app <imageid>
+
+////for fake api
+npm i -g json-server
+
+json-server --watch  db.json --port 8600
+
+mocha
+chai
